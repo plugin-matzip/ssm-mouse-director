@@ -1,0 +1,108 @@
+/* 모든 요소와 의사 요소에 box-sizing 규칙을 적용 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 폰트 크기 자동 조정을 방지 */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* 기본 여백 제거 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 목록의 기본 스타일 제거 */
+ul[role='list'],
+ol[role='list'],
+li {
+    list-style: none;
+}
+
+/* body 기본 설정 */
+body {
+    min-height: 250px;
+    width: 350px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 제목과 상호작용 요소의 line-height 설정 */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* 제목 요소의 텍스트 줄바꿈 균형 설정 */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* 클래스가 없는 a 태그의 기본 스타일 설정 */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: inherit;
+}
+
+/* 미디어 요소의 크기 조정 */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* 폼 요소가 폰트를 상속받도록 설정 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 행 속성이 없는 textarea의 최소 높이 설정 */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* 앵커 대상의 스크롤 마진 설정 */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    margin: 10px 0;
+}
